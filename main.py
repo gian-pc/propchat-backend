@@ -4,8 +4,10 @@ from app.config import settings
 from app.database import engine, Base
 from app.api import properties, chat
 
-# Crear tablas
-Base.metadata.create_all(bind=engine)
+# --- ¡ESTA ES LA SOLUCIÓN! ---
+# Comentamos esta línea. Estaba intentando conectarse a tu base de datos
+# (que no estamos usando) y fallaba, "matando" la app antes de que Uvicorn la encontrara.
+# Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title=settings.APP_NAME,

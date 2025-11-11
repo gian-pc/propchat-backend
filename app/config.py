@@ -20,6 +20,7 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+        extra = "ignore"  # <-- ¡AQUÍ ESTÁ LA SOLUCIÓN!
 
 
 @lru_cache()
