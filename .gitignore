@@ -1,0 +1,18 @@
+# Archivos de Entorno
+.env
+.env.*
+
+# Base de datos local
+*.db
+*.sqlite
+*.sqlite3
+
+# Dependencias y Caché de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Archivos de IDE
+.idea/
+.vscode/
