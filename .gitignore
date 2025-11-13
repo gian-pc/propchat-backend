@@ -1,6 +1,7 @@
 # Archivos de Entorno
 .env
 .env.*
+!.env.example
 
 # Base de datos local
 *.db
